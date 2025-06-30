@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula interativa</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Aula interativa js</h1>
+    <p>Escolha um dos tópicos abaixo:</p>
+
+    <div>
+        <button onclick="mostrarSecao('condiconal')">Condicional</button>
+        <button onclick="mostrarSecao('loopFor')">Loop for</button>
+        <button onclick="mostrarSecao('loopWhile')">Loop While</button>
+        <button onclick="mostrarSecao('arrays')">Arrays</button>
+    </div>
+
+    <div id=loopFor class="secao">
+        <h2>Loop for: contar de 1 a 10</h2>
+        <button onclick="mostrarNumeros()">mostrarNumeros</button>
+        <ul id="numeros"></ul>
+    </div>
+
+    <div id="condiconal" class="secao">
+        <h2>Condicional: verifique sua idade</h2>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+        <button onclick="verificarIdade()">Verificar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <div id="loopWhile" class="secao">
+        <h2>Loop While: Contar até 5</h2>
+        <button onclick="contarWhile()">Contar</button>
+        <div id="saidaWhile"></div>
+    </div>
+
+    <div id="arrays" class="secao">
+        <h2>Arrays: Lista de frutas</h2>
+        <button onclick="mostrarFrutas()">Mostrar Frutas</button>
+        <ul id="frutas"></ul>
+    </div>
+
+
+</body>
+
+</html>
